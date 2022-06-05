@@ -1,20 +1,32 @@
 {
   "name": "juicebox",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "seed:dev": "nodemon ./db/seed.js",
+    "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/highdemnd89/juicebox.git"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "bugs": {
-    "url": "https://github.com/highdemnd89/juicebox/issues"
+  "dependencies": {
+    "pg": "^8.7.3"
   },
-  "homepage": "https://github.com/highdemnd89/juicebox#readme",
-  "description": ""
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
